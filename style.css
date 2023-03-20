@@ -1,0 +1,416 @@
+html {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    ;
+
+}
+
+body {
+    width: max-content;
+    background: rgb(15, 135, 0);
+    color: white;
+    text-align: center;
+    background: rgb(15, 135, 0);
+    background: linear-gradient(251deg, rgba(15, 135, 0, 0.4258823529411765) 0%, rgba(0, 228, 224, 0.3905882352941177) 100%);
+
+
+
+}
+
+.wrapper {
+    width: max-content;
+    margin: auto;
+    font-family: 'Shantell Sans', cursive;
+
+
+}
+
+.blur {
+    filter: blur(1px);
+    pointer-events: none;
+
+}
+
+.hint-div {
+    display: flex;
+    width: auto;
+    margin-bottom: 1px;
+    color: goldenrod;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+.hint-btn,
+.reset-btn,
+.notif-btn {
+    cursor: pointer;
+}
+
+.hint-btn,
+.reset-btn {
+    margin-top: 2px;
+    text-align: center;
+    background-color: rgba(55, 133, 16, 0.459);
+    opacity: 0.8;
+}
+
+.hint-btn {
+    border: black 3px solid;
+    height: 70px;
+    padding-right: 100px;
+    padding-left: 50px;
+    border-radius: 1rem -5rem 1rem;
+    margin-right: -100px;
+}
+
+.hint-btn:hover span {
+    display: none;
+}
+
+.hint-btn:hover:before {
+    content: "Indiciu";
+}
+
+.reset-btn {
+    border: black 3px solid;
+
+    height: 70px;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-left: -100px;
+    z-index: 1;
+}
+
+.reset-btn:hover span {
+    display: none
+}
+
+.reset-btn:hover:before {
+    content: "Reseteaza"
+}
+
+
+
+.alpha {
+    width: 2rem;
+    height: 2rem;
+    background: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+    box-shadow: black 3px 2px 3px 0.5px;
+}
+
+.letter-div {
+    border: 0.1rem black solid;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 10px;
+    box-shadow: 0px 0px 70px 5px rgba(0, 0, 0, 0.39);
+    background-color: rgba(55, 133, 16, 0.459);
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 50%;
+}
+
+.alpha:hover {
+    background-color: #e75480;
+    border: none;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: darkgray;
+}
+
+.word-div {
+    display: flex;
+    padding-top: 2rem;
+    margin: auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.word {
+    margin-right: 1rem;
+    width: inherit;
+}
+
+.notif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fc6c85;
+    width: 90%;
+    padding: 20px 10px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.notif.castigat {
+    background-color: rgba(4, 139, 4, 0.8);
+}
+
+.notif.pierdut {
+    background-color: rgba(176, 32, 32, 0.8);
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+}
+
+
+.notif-green {
+    background-color: rgb(105, 179, 105);
+}
+
+.notif-red {
+    background-color: rgb(165, 0, 0);
+}
+
+.alpha.disabled {
+    pointer-events: none;
+    opacity: 4;
+}
+
+.items {
+    width: 10rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lives-img {
+    margin-top: 1rem;
+    width: 100%;
+    border: black 5px solid;
+
+}
+
+h1 {
+    font-size: 3rem;
+    width: max-content;
+    border: 5px black solid;
+    margin: auto;
+    padding: 1px 110px 1px 110px;
+    border-radius: 1px 1px 100px 100px;
+    background-color: green;
+    z-index: +2;
+}
+
+.row {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 30rem;
+    margin: 1px 1px 1px 1px;
+    margin-top: -35px;
+}
+
+
+
+button {
+    width: auto;
+    height: 30px;
+    border-radius: 15px 15px 25px 25px;
+}
+
+h3 {
+    color: black;
+    font-size: small;
+}
+
+p.hintText {
+    font-size: 25px;
+    border: gold 1px solid;
+    border-radius: 50rem;
+    color: bisque;
+    margin: auto;
+    padding: 1px;
+    width: 30%;
+    background-color: goldenrod;
+}
+
+.elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+
+.h3 {
+    color: black;
+
+    margin: 20px 0px 0px 0px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 1000,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+.ghilimele {
+    color: green;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+@media(max-width:500px) {
+
+    html {
+        min-height: 100%
+    }
+
+    body {
+        width: fit-content;
+        background: rgb(15, 135, 0);
+        color: white;
+        text-align: center;
+        overflow-x: hidden;
+        background: rgb(15, 135, 0);
+        background: linear-gradient(251deg, rgba(15, 135, 0, 0.4258823529411765) 0%, rgba(0, 228, 224, 0.3905882352941177) 100%);
+
+        /* disable horizontal scrolling/swiping */
+    }
+
+    .hint-btn,
+    .reset-btn,
+    .notif {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hint-btn {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .reset-btn {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+
+    .row {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .hint-btn,
+    .reset-btn {
+        margin-top: auto;
+        margin-left: 0;
+        margin-right: 0;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .hint-btn {
+        margin-bottom: 0rem;
+    }
+
+    .reset-btn:hover:before {
+        content: "";
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 15px;
+        width: 30%;
+        padding: 1px 50px 1px 50px;
+        margin: 5px;
+    }
+
+
+    .head {
+
+        margin: -15px 0px 5px 0px;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p.hintText {
+        font-size: 25px;
+        border: gold 1px solid;
+        border-radius: 50rem;
+        color: bisque;
+        margin: auto;
+        padding: 1px;
+        width: fit-content;
+        background-color: goldenrod;
+    }
+
+    .word-div {
+        display: inline-flex;
+        padding-top: 2rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        font-size: 20px;
+        margin: auto;
+        /* margin-left: -3rem; */
+    }
+
+
+
+    .elements {
+        display: flex;
+        justify-content: center;
+    }
+}
